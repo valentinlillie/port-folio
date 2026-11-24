@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets &amp; Ingénierie — Valentin LILLIÉ</title>
+  <link rel="shortcut icon" href="../assets/images/2d0b56e7e51cf11036ad8734bdb67e2d.png">
+  <link rel="icon" href="../assets/images/e53c4bd8da5e491d9ab09e7cf0daf874.png">
+  <link rel="apple-touch-icon" href="../assets/images/725b756a69a7d4c235070e51acd85560.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="nav-brand" href="index.html">Valentin <span>LILLIÉ</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link active" href="engineering.html">Projets &amp; Ingénierie</a>
+        <a class="nav-link" href="mobility.html">Mobilité</a>
+        <a class="nav-link" href="sustainability.html">Engagement</a>
+        <a class="nav-link" href="career.html">Parcours &amp; CV</a>
+        <a class="nav-link" href="sport.html">Sport</a>
+        <div class="lang-switch" role="group" aria-label="Sélecteur de langue">
+          <a class="lang-option" href="../engineering.html" lang="en" hreflang="en" onclick="this.href=this.getAttribute('href').split('#')[0]+location.hash">EN</a>
+          <span class="lang-option active" aria-current="true">FR</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="page-container">
+    <div class="page-intro">
+      <h1 class="page-title">Projets &amp; Ingénierie</h1>
+      <p class="page-subtitle">Compétitions de robotique, conception PCB &amp; capteurs, instrumentation analogique/DSP et projets logiciels.</p>
+    </div>
+
+    <!-- Sommaire / Accès rapide -->
+    <nav class="card toc-card" aria-label="Sommaire des projets">
+      <p class="toc-heading">Accès rapide — Sommaire des projets</p>
+      <div class="toc-grid">
+        <div class="toc-group">
+          <h2 class="toc-group-title">Club 7Robot (ENSEEIHT)</h2>
+          <ul class="toc-list">
+            <li><a href="#7robot-club">Présidence 7Robot &amp; Coupe de France</a></li>
+            <li><a href="#robot-2027">Robot Principal 2027 (En cours)</a></li>
+            <li><a href="#pami-ninja">« PAMI Ninja » — Édition 2026</a></li>
+          </ul>
+        </div>
+
+        <div class="toc-group">
+          <h2 class="toc-group-title">Stage &amp; Projets personnels</h2>
+          <ul class="toc-list">
+            <li><a href="#laero-internship">LAERO / CNRS — Station multi-capteurs</a></li>
+            <li><a href="#rubiks-solver">TIPE — Solveur de Rubik’s Cube</a></li>
+          </ul>
+        </div>
+
+        <div class="toc-group">
+          <h2 class="toc-group-title">Projets d’école (ENSEEIHT)</h2>
+          <ul class="toc-list">
+            <li><a href="#ppg-sensor">S6 — Chaîne capteur cardiaque PPG</a></li>
+            <li><a href="#snake-game">S5 — Jeu « Snake » en C</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="category-divider">
+      <h2>Club 7Robot (ENSEEIHT)</h2>
+      <a class="back-to-top" href="#top">↑ Haut</a>
+    </div>
+
+    <!-- Club 7Robot & Coupe de France de Robotique (2026 & 2027) -->
+    <article id="7robot-club" class="card project-anchor">
+      <div class="club-row">
+        <div>
+          <span class="section-label">Club 7Robot · ENSEEIHT · 2025 – Aujourd’hui</span>
+          <h2 class="card-title">Coupe de France de Robotique (2026 &amp; 2027) &amp; Présidence 7Robot</h2>
+          <p class="body-text">
+            Après avoir rejoint le club de robotique de l’ENSEEIHT <strong>7Robot</strong> en première année, j’en suis devenu <strong>Président</strong> en mai 2026 : coordination d’une équipe d’environ 20 membres actifs, gestion des partenariats industriels (Elsys Design, Bootlin, Electroimpact, Dassault Systèmes), animation de formations hebdomadaires SolidWorks &amp; RP2040, et pilotage du projet pluriannuel de robot autonome parlant <strong>R2D2 × UNIVERSEH</strong>.
+          </p>
+
+          <ul class="clean-list">
+            <li><strong>Coupe de France de Robotique 2027 (En cours) :</strong> Direction d’équipe et conception mécanique complète du robot principal — ascenseur à vis trapézoïdale T8, préhenseur pneumatique à ventouses, éjecteur Venturi et électrovannes.</li>
+            <li><strong>R2D2 × UNIVERSEH (Sept 2026 – Aujourd’hui) :</strong> Coordination d’un projet pluriannuel de robot R2D2 grandeur nature autonome et parlant, financé par UNIVERSEH et Toulouse INP.</li>
+          </ul>
+
+          <div class="tech-tags">
+            <span class="tech-tag">SolidWorks</span>
+            <span class="tech-tag">Impression 3D (PLA/PETG)</span>
+            <span class="tech-tag">Découpe laser</span>
+            <span class="tech-tag">Pneumatique</span>
+            <span class="tech-tag">RP2040 / PIC</span>
+            <span class="tech-tag">ROS2</span>
+          </div>
+
+          <div class="hero-actions" style="margin-top: 20px;">
+            <a class="btn btn-primary" href="https://7robot.framer.website/" target="_blank" rel="noopener noreferrer">Site web 7Robot</a>
+            <a class="btn btn-outline" href="https://www.instagram.com/7robot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram @7robot</a>
+          </div>
+        </div>
+
+        <a
+          class="robot-logo-box"
+          href="https://7robot.framer.website/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Site web du club 7Robot"
+        >
+          <img src="../assets/media/75c66b3ec0baae6c6052f64a9cd4f3c2.png" alt="Logo du club 7Robot">
+        </a>
+      </div>
+
+      <div class="ninja-hero-grid" style="margin-bottom: 0;">
+        <figure class="media-figure">
+          <img src="../assets/media/7robot/7robot-team-stand.jpg" alt="Équipe 7Robot au Stand N-07 avec le robot principal et les PAMIs à la Coupe de France de Robotique">
+          <figcaption>Équipe 7Robot &amp; robots au Stand N-07 — Coupe de France de Robotique</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/7robot/7robot-stage-match.jpg" alt="Équipe 7Robot préparant les robots sur la grande scène de compétition avec l’arbitre">
+          <figcaption>Préparation d’un match sur la grande scène de la Coupe de France de Robotique</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Coupe de France de Robotique 2027 — Robot Principal -->
+    <article id="robot-2027" class="card project-anchor">
+      <span class="section-label">Coupe de France de Robotique 2027 · 7Robot · En cours</span>
+      <h2 class="card-title">Robot Principal 2027 — Base holonome, Ascenseur T8 &amp; Préhenseur à ventouses</h2>
+      <p class="body-text">
+        En tant que président de 7Robot et concepteur mécanique pour l’édition 2027, je conçois et prototype actuellement le robot principal holonome : une base omnidirectionnelle à 3 roues avec LiDAR central, un ascenseur linéaire à vis T8 équipé d’un moyeu rotatif, et un système de préhension pneumatique à ventouses sur 3 niveaux alimenté par des modules compacts intégrés (mini-pompe 4,5 V, électrovanne et capteur de pression).
+      </p>
+      <p class="body-text">
+        <em>État d’avancement :</em> Ce robot est en cours de développement actif — la conception mécanique continue d’être itérée et finalisée, et les tests sur banc ci-dessous utilisent une électronique et un câblage provisoires que j’ai assemblés afin de valider la mécanique pendant que le pôle électronique finalise les PCB définitifs.
+      </p>
+
+      <div class="ninja-hero-grid">
+        <figure class="media-figure">
+          <img class="cad-img" src="../assets/media/robot2027/robot2027-cad-full.jpg" alt="Assemblage CAO 3D SolidWorks complet du robot principal 2027">
+          <figcaption>Assemblage CAO 3D SolidWorks complet (base holonome, LiDAR, ascenseur T8 &amp; préhenseur 3 niveaux)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img class="cad-img" src="../assets/media/robot2027/robot2027-cad-top.jpg" alt="Vue de dessus SolidWorks de la base holonome triangulaire">
+          <figcaption>Vue de dessus — architecture holonome 3 roues &amp; encombrement des éléments de jeu</figcaption>
+        </figure>
+      </div>
+
+      <div class="ninja-videos-grid">
+        <figure class="media-figure">
+          <video
+            class="robot2027-video"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source src="../assets/video/robot2027/robot2027-lift-rotate.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+          </video>
+          <figcaption>Test sur banc : préhension par vide multi-boîtes &amp; rotation à 180°</figcaption>
+        </figure>
+
+        <figure class="media-figure">
+          <video
+            class="robot2027-video"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source src="../assets/video/robot2027/robot2027-elevator-rotation.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+          </video>
+          <figcaption>Test sur banc de l’ascenseur linéaire à vis T8 &amp; du moyeu rotatif</figcaption>
+        </figure>
+      </div>
+
+      <div class="robot2027-build-gallery">
+        <figure class="media-figure">
+          <img src="../assets/media/robot2027/robot2027-gripper-proto.jpg" alt="Prototype physique du préhenseur à ventouses 3 niveaux et de l’ascenseur T8">
+          <figcaption>Prototype physique — préhenseur à ventouses 3 niveaux &amp; ascenseur T8</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img class="cad-img" src="../assets/media/robot2027/robot2027-pneumatic-cad.jpg" alt="CAO SolidWorks du module pneumatique compact avec pompe, électrovanne et capteur de pression">
+          <figcaption>CAO du module pneumatique (pompe, électrovanne &amp; capteur de pression)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/robot2027/robot2027-pneumatic-real.jpg" alt="Module pneumatique imprimé en 3D avec mini-pompe 4,5V, électrovanne et capteur de pression">
+          <figcaption>Module pneumatique imprimé en 3D assemblé (pompe 4,5 V, électrovanne &amp; capteur de pression)</figcaption>
+        </figure>
+      </div>
+
+      <div class="tech-tags">
+        <span class="tech-tag">SolidWorks</span>
+        <span class="tech-tag">Ascenseur vis T8</span>
+        <span class="tech-tag">Pneumatique par vide</span>
+        <span class="tech-tag">Électrovannes</span>
+        <span class="tech-tag">Impression 3D &amp; Découpe laser</span>
+        <span class="tech-tag">ROS2</span>
+      </div>
+    </article>
+
+    <!-- PAMI Ninja — Coupe de France de Robotique 2026 -->
+    <article id="pami-ninja" class="card project-anchor">
+      <span class="section-label">Coupe de France de Robotique 2026 · 7Robot · Sept 2025 – Mai 2026</span>
+      <h2 class="card-title">« PAMI Ninja » — Robot secondaire autonome</h2>
+      <p class="body-text">
+        En tant que responsable mécanique de notre robot secondaire autonome (<em>Petit Actionneur Mobile Indépendant</em>), j’ai conçu la structure mécanique complète, le rail d’ascenseur linéaire central à crémaillère et le double préhenseur pneumatique à ventouses, en collaboration étroite avec les pôles électronique et informatique pour intégrer notre PCB circulaire sur mesure 7Robot.
+      </p>
+
+      <div class="result-highlight">
+        <strong>Résultat en compétition :</strong> Qualifié <strong>8<sup>e</sup> sur 108 équipes homologuées</strong> (score maximal de 124 points sur un match) et qualification jusqu’en <strong>8<sup>es</sup> de finale</strong>.
+      </div>
+
+      <div class="ninja-hero-grid">
+        <figure class="media-figure">
+          <img src="../assets/media/ninja/ninja-final-front.jpg" alt="PAMI Ninja finalisé — vue avant avec double ventouses">
+          <figcaption>PAMI Ninja final — vue avant &amp; double ventouses pneumatiques</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ninja/ninja-final-rear.jpg" alt="PAMI Ninja finalisé — vue arrière avec batterie 12V et roues motrices">
+          <figcaption>PAMI Ninja final — vue arrière, batterie 12 V &amp; motorisation</figcaption>
+        </figure>
+      </div>
+
+      <div class="ninja-videos-grid">
+        <figure class="media-figure">
+          <video
+            class="ninja-video ninja-video--pickup"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source src="../assets/video/ninja/ninja-autonomous-pickup.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+          </video>
+          <figcaption>Test de navigation autonome &amp; saisie de bloc par ventouses</figcaption>
+        </figure>
+
+        <figure class="media-figure">
+          <video
+            class="ninja-video"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source src="../assets/video/ninja/ninja-elevator-test.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+          </video>
+          <figcaption>Test du mécanisme d’ascenseur sur rail linéaire central</figcaption>
+        </figure>
+      </div>
+
+      <div class="ninja-build-gallery">
+        <figure class="media-figure">
+          <img src="../assets/media/ninja/ninja-cad.jpg" alt="Assemblage CAO 3D SolidWorks du PAMI Ninja">
+          <figcaption>Assemblage CAO 3D SolidWorks</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ninja/ninja-prototype.jpg" alt="Prototype fonctionnel imprimé en 3D du PAMI Ninja avec pompes à vide">
+          <figcaption>Prototype fonctionnel imprimé en 3D</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ninja/ninja-pcb.jpg" alt="PCB circulaire sur mesure 7Robot pour le PAMI Ninja">
+          <figcaption>PCB circulaire sur mesure 7Robot</figcaption>
+        </figure>
+      </div>
+
+      <div class="tech-tags">
+        <span class="tech-tag">SolidWorks</span>
+        <span class="tech-tag">Impression 3D</span>
+        <span class="tech-tag">Découpe laser</span>
+        <span class="tech-tag">Pneumatique par vide</span>
+        <span class="tech-tag">PCB sur mesure (RP2040 / PIC)</span>
+      </div>
+    </article>
+
+    <div class="category-divider">
+      <h2>Stage &amp; Projets personnels</h2>
+      <a class="back-to-top" href="#top">↑ Haut</a>
+    </div>
+
+    <!-- Stage LAERO / CNRS -->
+    <article id="laero-internship" class="card project-anchor">
+      <span class="section-label">Stage ingénieur · LAERO / OMP / CNRS · Juin – Juillet 2026</span>
+      <h2 class="card-title">Plateforme embarquée multi-capteurs de mesure environnementale</h2>
+      <p class="body-text">
+        Au cours de mon stage ingénieur de 8 semaines au <strong>Laboratoire d’Aérologie (LAERO — OMP / CNRS)</strong> à Toulouse, j’ai développé une station environnementale embarquée autonome destinée aux campagnes de mesures atmosphériques sur le terrain.
+      </p>
+      <ul class="clean-list">
+        <li>Conception du schéma et routage d’un <strong>PCB sur mesure sous KiCad</strong> interfaçant plusieurs capteurs environnementaux (CO₂, baromètre, GPS, télémétrie radio/Bluetooth, enregistrement microSD) avec un <strong>Arduino Mega 2560</strong> et deux étages d’alimentation DC/DC (12V→5V et 5V→3,3V).</li>
+        <li>Développement du firmware d’acquisition embarqué et validation des alimentations et capteurs sur banc de test.</li>
+        <li>Modélisation et impression 3D du châssis mécanique modulaire sous <strong>SolidWorks</strong> (trappe d’accès, support de pompe, régulateur thermique) et intégration de l’ensemble dans un boîtier terrain isolé thermiquement.</li>
+      </ul>
+
+      <div class="robot2027-build-gallery" style="margin-top: 20px;">
+        <figure class="media-figure">
+          <img
+            src="../assets/media/laero/laero-pcb-bare.jpg"
+            alt="PCB KiCad vert sur mesure fabriqué pour le LAERO (06/2026) avec étages DC/DC et connecteurs capteurs/télémétrie"
+          >
+          <figcaption>PCB KiCad sur mesure (06/2026 LAERO) — interface Arduino Mega &amp; rails DC/DC</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="../assets/media/laero/laero-pcb-mega.jpg"
+            alt="PCB LAERO équipé avec Arduino Mega 2560 R3, module microSD et connecteurs d’alimentation XT30"
+          >
+          <figcaption>Carte équipée avec Arduino Mega 2560 R3 &amp; enregistreur microSD</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="../assets/media/laero/laero-pcb-power-test.jpg"
+            alt="Test de mise sous tension sur banc du PCB LAERO avec convertisseurs DC/DC et régulateur thermique"
+          >
+          <figcaption>Mise sous tension sur banc — convertisseurs DC/DC &amp; validation des bus capteurs</figcaption>
+        </figure>
+      </div>
+
+      <div class="robot2027-build-gallery" style="margin-top: 18px;">
+        <figure class="media-figure">
+          <img
+            src="../assets/media/laero/laero-chassis-assembled.jpg"
+            alt="Châssis mécanique imprimé en 3D intégrant le PCB LAERO, l’Arduino Mega, le module RF et la pompe d’échantillonnage"
+          >
+          <figcaption>Châssis SolidWorks imprimé en 3D avec PCB, télémétrie RF &amp; pompe intégrés</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="../assets/media/laero/laero-chassis-open.jpg"
+            alt="Châssis LAERO imprimé en 3D avec la trappe latérale ouverte montrant le compartiment câblage"
+          >
+          <figcaption>Trappe d’accès modulaire ouverte pour la maintenance batterie &amp; faisceau</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="../assets/media/laero/laero-insulated-enclosure.jpg"
+            alt="Station de mesure environnementale LAERO complète sous tension dans son boîtier terrain isolé"
+          >
+          <figcaption>Station complète sous tension dans son boîtier terrain isolé thermiquement</figcaption>
+        </figure>
+      </div>
+
+      <div class="tech-tags" style="margin-top: 22px;">
+        <span class="tech-tag">KiCad (PCB)</span>
+        <span class="tech-tag">SolidWorks (CAO)</span>
+        <span class="tech-tag">Arduino / C++</span>
+        <span class="tech-tag">Capteurs environnementaux</span>
+      </div>
+    </article>
+
+    <!-- TIPE Solveur de Rubik's Cube -->
+    <article id="rubiks-solver" class="card project-anchor">
+      <span class="section-label">TIPE · Classe Préparatoire MP · 2024 – 2025</span>
+      <h2 class="card-title">Solveur physique &amp; multi-langages de Rubik’s Cube</h2>
+
+      <div class="tipe-top">
+        <video
+          class="tipe-video"
+          controls
+          playsinline
+          preload="metadata"
+          poster="../assets/video/0e0eb8af32845c9bf2114b96b6611c6b.jpg"
+        >
+          <source src="../assets/video/ab96f104a7a527b538cda668b3b6822e.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+        </video>
+
+        <div>
+          <p class="body-text">
+            Dans le cadre de mon Travail d’Initiative Personnelle Encadré (TIPE) en classe préparatoire, j’ai conçu un robot solveur de Rubik’s Cube combinant logiciel multi-langages, électronique de puissance embarquée et mécanique sur mesure :
+          </p>
+          <ul class="clean-list">
+            <li><strong>Python :</strong> Interface graphique (GUI) permettant de saisir la configuration initiale des couleurs du cube.</li>
+            <li><strong>OCaml :</strong> Modélisation algébrique du cube et algorithme complet de résolution <strong>Fridrich (CFOP)</strong> (Croix, F2L, OLL, PLL).</li>
+            <li><strong>Arduino (C/C++) &amp; Mécanique :</strong> Pilotage des moteurs pas à pas via drivers de puissance (12V/24V), châssis modélisé sous <strong>Fusion 360</strong> et axes de Rubik’s Cube usinés sur mesure.</li>
+          </ul>
+
+          <div class="result-highlight">
+            <strong>Résultat :</strong> Résolution physique complète d’un Rubik’s Cube mélangé en <strong>6 à 7 secondes</strong>.
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">OCaml</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Arduino (C/C++)</span>
+            <span class="tech-tag">Fusion 360</span>
+            <span class="tech-tag">Drivers moteurs pas à pas</span>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7375602947860168704/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir plus de détails sur LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <figure class="media-figure tipe-gui-figure">
+        <img src="../assets/media/rubiks-gui.jpg" alt="Interface graphique Python et solveur OCaml pour le Rubik's Cube">
+        <figcaption>Interface Python &amp; solveur OCaml Fridrich (saisie des couleurs, état algébrique &amp; liaison série Arduino)</figcaption>
+      </figure>
+
+      <div class="tipe-gallery">
+        <figure class="media-figure">
+          <img src="../assets/media/29b89e0a0611969062436884e0930121.jpg" alt="Robot solveur physique de Rubik's Cube">
+          <figcaption>Robot solveur physique de Rubik’s Cube</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/7bdba4a52d27d2e549689b95aa1a81dc.jpg" alt="Câblage de la carte Arduino Uno">
+          <figcaption>Câblage du contrôleur Arduino Uno</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/a71ea84ed1a847a8adab698020aaf1ce.jpg" alt="Drivers de moteurs pas à pas sur plaque d'essai">
+          <figcaption>Drivers de moteurs pas à pas sur breadboard</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <div class="category-divider">
+      <h2>Projets d’école (ENSEEIHT)</h2>
+      <a class="back-to-top" href="#top">↑ Haut</a>
+    </div>
+
+    <!-- Capteur biomédical PPG -->
+    <article id="ppg-sensor" class="card project-anchor">
+      <span class="section-label">Semestre S6 · ENSEEIHT 3EA (Objets Connectés) · 2025 – 2026</span>
+      <h2 class="card-title">Chaîne d’acquisition cardiaque par photopléthysmographie (PPG)</h2>
+      <p class="body-text">
+        En équipe de quatre, nous avons conçu, routé, soudé et validé expérimentalement une chaîne complète d’acquisition biomédicale par photopléthysmographie (PPG) — le principe optique utilisé dans les montres connectées pour mesurer la fréquence cardiaque sans ECG.
+      </p>
+      <ul class="clean-list">
+        <li><strong>Chaîne optique &amp; analogique :</strong> Émetteur LED et récepteur photodiode, PCB d’amplification analogique routé sur mesure (gain 4,73 / 13,5 dB, suiveur et paire différentielle) et filtrage analogique validés par rapport aux simulations.</li>
+        <li><strong>Conversion &amp; Traitement numérique (DSP) :</strong> Échantillonneur-bloqueur + CAN simple rampe interfacé avec un FPGA et un Arduino, puis traitement numérique sous MATLAB/Python (rééchantillonnage, extraction de la fréquence cardiaque, vitesse d’onde de pouls et estimation de l’âge vasculaire).</li>
+      </ul>
+
+      <figure class="media-figure tipe-gui-figure">
+        <img src="../assets/media/ppg/ppg-full-chain.jpg" alt="Chaîne PCB PPG complète : capteur optique et amplificateur, module E/S, filtre analogique et CAN simple rampe">
+        <figcaption>Chaîne PCB complète assemblée (de gauche à droite) : Capteur optique &amp; amplificateur → Module E/S → Filtre analogique → CAN simple rampe</figcaption>
+      </figure>
+
+      <div class="ppg-media-grid">
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-amp-routing.jpg" alt="Routage PCB de l’étage amplificateur analogique sous Cadence PCB Editor">
+          <figcaption>Routage PCB de l’étage d’amplification analogique</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-test-bench.jpg" alt="Banc de test matériel avec carte FPGA, Arduino, breadboard et PCB CAN simple rampe">
+          <figcaption>Banc de test matériel — FPGA, Arduino &amp; carte CAN simple rampe</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-oscilloscope-digital.jpg" alt="Oscilloscope mixte Keysight affichant les sorties numériques 8 bits D0 à D7">
+          <figcaption>Keysight MSOX3014T — capture logique 8 bits (D0–D7)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <video controls playsinline preload="metadata">
+            <source src="../assets/video/ppg/ppg-adc-test.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+          </video>
+          <figcaption>Validation en direct à l’oscilloscope du CAN simple rampe</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="ppg-subsection-title">Acquisition du signal &amp; Traitement numérique (MATLAB)</h3>
+      <p class="body-text">
+        À partir du signal optique analogique capturé en direct sur un oscilloscope Keysight (284 mV<sub>pp</sub> avec pics systoliques et encoches dicrotes visibles), nous avons traité le signal numérisé sous MATLAB : rééchantillonnage de 1200 Hz à 100 Hz (10 ms), filtrages de Butterworth passe-bas (5,0 Hz) et passe-bande (0,5–5,0 Hz) pour supprimer les pics parasites et la dérive de ligne de base, puis extraction spectrale de la fréquence cardiaque par périodogramme (<strong>1,206 Hz ≈ 72,4 BPM</strong>).
+      </p>
+
+      <div class="ppg-plots-grid">
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-scope-waveform.png" alt="Capture oscilloscope Keysight MSO-X 2012A du signal PPG analogique (284 mV crête à crête)">
+          <figcaption>Signal PPG analogique sur Keysight MSO-X 2012A (284 mV<sub>pp</sub>, 5 kSa/s)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-raw-signal.png" alt="Signal PPG brut acquis sous MATLAB sur 10 secondes">
+          <figcaption>Signal PPG brut acquis sous MATLAB (fenêtre de 10 s)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-filtered-signal.png" alt="Signal PPG filtré numériquement sous MATLAB sans dérive de ligne de base">
+          <figcaption>Signal PPG filtré (battements périodiques nets, dérive supprimée)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-resampled.png" alt="Rééchantillonnage du signal brut de 1200 Hz avec pics parasites vers 100 Hz (10 ms)">
+          <figcaption>Rééchantillonnage de l’acquisition brute 1200 Hz vers 100 Hz (10 ms)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-lowpass.png" alt="Filtrage passe-bas Butterworth à 5,0 Hz supprimant les pics parasites et lissant le signal">
+          <figcaption>Filtre passe-bas Butterworth 5,0 Hz (suppression des pics &amp; bruit HF)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="../assets/media/ppg/ppg-bandpass.png" alt="Filtrage passe-bande Butterworth 0,5 à 5,0 Hz stabilisant la ligne de base">
+          <figcaption>Filtre passe-bande Butterworth 0,5 – 5,0 Hz (bande cardiaque stable)</figcaption>
+        </figure>
+      </div>
+
+      <figure class="media-figure tipe-gui-figure" style="margin-bottom: 0;">
+        <img src="../assets/media/ppg/ppg-periodogram.png" alt="Périodogramme en échelle linéaire du signal PPG filtré montrant un pic dominant à 1,20614 Hz (~72,4 BPM)">
+        <figcaption>Périodogramme du signal PPG filtré — pic cardiaque dominant à <strong>1,206 Hz (~72,4 BPM)</strong></figcaption>
+      </figure>
+
+      <div class="tech-tags">
+        <span class="tech-tag">Électronique analogique</span>
+        <span class="tech-tag">Routage PCB</span>
+        <span class="tech-tag">CAN simple rampe</span>
+        <span class="tech-tag">FPGA / Arduino</span>
+        <span class="tech-tag">Validation oscilloscope</span>
+        <span class="tech-tag">DSP MATLAB / Python</span>
+      </div>
+    </article>
+
+    <!-- Jeu Snake en C -->
+    <article id="snake-game" class="card project-anchor">
+      <span class="section-label">5<sup>e</sup> Semestre · ENSEEIHT</span>
+      <h2 class="card-title">Jeu « Snake » en C</h2>
+      <p class="body-text">
+        Pour maîtriser le langage de programmation C, un projet nous a été proposé : développer le jeu « Snake » en C sous CodeBlocks.
+      </p>
+
+      <div style="margin-top: 22px;">
+        <img class="snake-full" src="../assets/media/79d0e3c6ce4ab99743cfa9b3c59ff8a3.png" alt="Jeu Snake dans l’environnement CodeBlocks">
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Valentin LILLIÉ — ENSEEIHT (3EA), Toulouse · <a class="inline-link" href="mailto:valentin.lillie@etu.toulouse-inp.fr">valentin.lillie@etu.toulouse-inp.fr</a></span>
+      <div class="footer-links">
+        <a href="../assets/cv/CV_Valentin_Lillie_FR.pdf" target="_blank" rel="noopener noreferrer">CV Français</a>
+        <a href="../assets/cv/CV_Valentin_Lillie_EN.pdf" target="_blank" rel="noopener noreferrer">CV English</a>
+        <a href="https://github.com/valentinlillie" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
