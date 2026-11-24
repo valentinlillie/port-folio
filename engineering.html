@@ -285,11 +285,64 @@
         During my 8-week engineering internship at the <strong>Laboratoire d’Aérologie (LAERO — OMP / CNRS)</strong> in Toulouse, I developed an autonomous embedded environmental station designed for field atmospheric measurements.
       </p>
       <ul class="clean-list">
-        <li>Designed the schematic and routed a custom <strong>PCB in KiCad</strong> interfacing multiple environmental sensors with an Arduino architecture.</li>
-        <li>Implemented embedded acquisition firmware and analyzed sensor responses.</li>
-        <li>Modeled and integrated the protective mechanical enclosure in <strong>SolidWorks</strong>, delivering a complete working prototype to the lab.</li>
+        <li>Designed the schematic and routed a custom <strong>PCB in KiCad</strong> interfacing multiple environmental sensors (CO₂, barometer, GPS, radio/Bluetooth telemetry, microSD logging) with an <strong>Arduino Mega 2560</strong> and dual DC/DC power stages (12V→5V and 5V→3.3V).</li>
+        <li>Implemented embedded acquisition firmware and validated power &amp; sensor bring-up on the bench.</li>
+        <li>Modeled and 3D-printed the modular mechanical chassis in <strong>SolidWorks</strong> (with access hatch, pump mount, and thermal controller) and integrated the full system into a thermally insulated field enclosure.</li>
       </ul>
-      <div class="tech-tags">
+
+      <figure class="media-figure tipe-gui-figure">
+        <img
+          src="assets/media/laero/laero-pcb-bare.jpg"
+          alt="Custom green KiCad PCB fabricated for LAERO (06/2026) with dual DC/DC stages and sensor/telemetry headers"
+          style="max-height: 440px; object-fit: contain; background: #f4f7fa;"
+        >
+        <figcaption>Custom KiCad PCB (06/2026 LAERO) — Arduino Mega interface, 12V→5V &amp; 5V→3.3V DC/DC rails, and sensor/telemetry headers</figcaption>
+      </figure>
+
+      <div class="ppg-plots-grid" style="margin-top: 18px;">
+        <figure class="media-figure">
+          <img
+            src="assets/media/laero/laero-pcb-mega.jpg"
+            alt="Populated LAERO PCB with Arduino Mega 2560 R3, microSD module, and XT30 power connectors"
+            style="max-height: 420px; object-fit: contain; background: #f4f7fa;"
+          >
+          <figcaption>Populated carrier board with Arduino Mega 2560 R3 &amp; microSD data logger</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="assets/media/laero/laero-pcb-power-test.jpg"
+            alt="Bench power-up test of the custom LAERO PCB with DC/DC buck converters and thermal controller"
+            style="max-height: 420px; object-fit: contain; background: #f4f7fa;"
+          >
+          <figcaption>Bench power bring-up — dual DC/DC buck converters &amp; sensor bus testing</figcaption>
+        </figure>
+      </div>
+
+      <div class="robot2027-build-gallery" style="margin-top: 18px;">
+        <figure class="media-figure">
+          <img
+            src="assets/media/laero/laero-chassis-assembled.jpg"
+            alt="3D-printed yellow and black mechanical chassis holding the LAERO PCB, Arduino Mega, RF module, and sampling pump"
+          >
+          <figcaption>3D-printed SolidWorks chassis with PCB, RF telemetry &amp; pump integrated</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="assets/media/laero/laero-chassis-open.jpg"
+            alt="3D-printed LAERO chassis with side access hatch opened showing internal wiring bay"
+          >
+          <figcaption>Modular access hatch opened for battery &amp; harness maintenance</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img
+            src="assets/media/laero/laero-insulated-enclosure.jpg"
+            alt="Complete LAERO environmental measurement station powered on inside its thermally insulated foil-lined field box"
+          >
+          <figcaption>Complete powered-on station inside its thermally insulated field enclosure</figcaption>
+        </figure>
+      </div>
+
+      <div class="tech-tags" style="margin-top: 22px;">
         <span class="tech-tag">KiCad (PCB)</span>
         <span class="tech-tag">SolidWorks (CAD)</span>
         <span class="tech-tag">Arduino / C++</span>
