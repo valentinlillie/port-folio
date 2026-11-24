@@ -78,7 +78,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
 }
 
 .nav-brand {
@@ -99,7 +99,7 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -107,10 +107,10 @@ a {
 .nav-link {
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 500;
   color: var(--ink-secondary);
-  padding: 8px 12px;
+  padding: 7px 10px;
   border-radius: 8px;
   transition: color 0.16s ease, background-color 0.16s ease;
   white-space: nowrap;
@@ -131,12 +131,12 @@ a {
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  margin-left: 8px;
-  padding: 2px;
+  margin-left: 10px;
+  padding: 3px;
   border-radius: 999px;
-  background-color: var(--bg-subtle);
-  border: 1px solid var(--border-medium);
-  gap: 2px;
+  background-color: #eef3f9;
+  border: 1px solid #cbd7e6;
+  gap: 3px;
   flex-shrink: 0;
 }
 
@@ -144,28 +144,38 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 34px;
-  padding: 4px 10px;
+  gap: 5px;
+  padding: 5px 10px;
   border-radius: 999px;
   font-family: var(--font-heading);
-  font-size: 12.5px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
   text-decoration: none;
-  color: var(--ink-secondary);
-  transition: color 0.16s ease, background-color 0.16s ease;
+  color: #5b6b80;
+  transition: color 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease;
 }
 
 a.lang-option:hover,
 a.lang-option:focus-visible {
   color: var(--accent-blue);
-  background-color: var(--bg-surface);
+  background-color: #ffffff;
 }
 
 .lang-option.active {
   background-color: var(--accent-blue);
   color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 74, 173, 0.28);
   cursor: default;
+}
+
+.lang-flag {
+  width: 15px;
+  height: 11px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 0.5px rgba(15, 23, 42, 0.18);
 }
 
 /* --------------------------------------------------------------------------
