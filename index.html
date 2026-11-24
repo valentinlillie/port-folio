@@ -3,55 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — Valentin LILLIÉ</title>
+  <title>Valentin LILLIÉ — Portfolio</title>
   <link rel="shortcut icon" href="assets/images/2d0b56e7e51cf11036ad8734bdb67e2d.png">
   <link rel="icon" href="assets/images/e53c4bd8da5e491d9ab09e7cf0daf874.png">
   <link rel="apple-touch-icon" href="assets/images/725b756a69a7d4c235070e51acd85560.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="nav-link active" href="index.html">Welcome</a>
-      <a class="nav-link" href="engineering.html">Engineering<br>Course &amp; Projects</a>
-      <a class="nav-link" href="mobility.html">International<br>Mobility</a>
-      <a class="nav-link" href="sustainability.html">Sustainability &amp;<br>Civic Engagement</a>
-      <a class="nav-link" href="career.html">Career<br>Development</a>
-      <a class="nav-link" href="sport.html">Sport &amp;<br>other activities</a>
+      <a class="nav-brand" href="index.html">Valentin <span>LILLIÉ</span></a>
+      <div class="nav-links">
+        <a class="nav-link active" href="index.html">Welcome</a>
+        <a class="nav-link" href="engineering.html">Engineering &amp; Projects</a>
+        <a class="nav-link" href="mobility.html">International Mobility</a>
+        <a class="nav-link" href="sustainability.html">Sustainability</a>
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link" href="sport.html">Sport</a>
+      </div>
     </nav>
   </header>
 
   <main class="page-container">
-    <h1 class="page-title">Welcome</h1>
+    <section class="card hero-card">
+      <div>
+        <p class="hero-greeting">Welcome</p>
+        <h1 class="hero-name">Valentin LILLIÉ</h1>
+        <p class="hero-bio">
+          I’m Valentin. Since childhood, I have been passionate about robotics, and especially about the way a computer program can bring a real articulated object to life. After two years of <em>classe préparatoire aux grandes écoles</em>, I joined <a class="inline-link" href="https://www.enseeiht.fr/fr/index.html" target="_blank" rel="noopener noreferrer">ENSEEIHT</a> to learn how to design electronic boards and develop the skills needed to create robots.
+        </p>
 
-    <section class="welcome-hero">
-      <p class="welcome-bio">
-        I’m Valentin. Since childhood, I have been passionate about robotics, and especially about the way a computer program can bring a real articulated object to life. After two years of <em>classe préparatoire aux grandes écoles</em>, I joined <a class="inline-link" href="https://www.enseeiht.fr/fr/index.html" target="_blank" rel="noopener noreferrer">ENSEEIHT</a> to learn how to design electronic boards and develop the skills needed to create robots.
-      </p>
+        <div class="hero-actions">
+          <a
+            class="linkedin-pill"
+            href="https://www.linkedin.com/in/valentin-lillie/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/media/b65c1c9c3fed0ecc180a3886cd7dbb1a.svg" alt="">
+            LinkedIn
+          </a>
+          <a class="btn btn-outline" href="engineering.html">Engineering Projects</a>
+          <a class="btn btn-outline" href="career.html">CV &amp; Career</a>
+        </div>
+      </div>
 
-      <div class="welcome-profile">
+      <div class="hero-profile">
         <img
-          class="welcome-avatar"
+          class="hero-avatar"
           src="assets/media/598193132a9f8a0b9470ed6460129778.png"
           alt="Valentin LILLIÉ"
         >
-        <a class="welcome-name" href="index.html">Valentin<br>LILLIÉ</a>
-        <a
-          class="linkedin-btn"
-          href="https://www.linkedin.com/in/valentin-lillie/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Valentin LILLIÉ on LinkedIn"
-        >
-          <img src="assets/media/b65c1c9c3fed0ecc180a3886cd7dbb1a.svg" alt="LinkedIn">
-        </a>
       </div>
     </section>
 
-    <section class="welcome-video-section">
+    <section class="card video-card">
       <video
         class="video-player"
         controls
@@ -63,8 +72,26 @@
         Your browser does not support HTML5 video.
       </video>
 
-      <h2 class="video-heading">Here is my<br>presentation<br>video</h2>
+      <div class="video-copy">
+        <span class="section-label">Introduction</span>
+        <h2>Here is my presentation video</h2>
+        <p class="body-text">
+          A short video presenting my background, my motivation for robotics and embedded electronics, and my studies at ENSEEIHT.
+        </p>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Valentin LILLIÉ — ENSEEIHT, Toulouse</span>
+      <div class="footer-links">
+        <a href="cv-french.html">CV Français</a>
+        <a href="cv-english.html">CV English</a>
+        <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

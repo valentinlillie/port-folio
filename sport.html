@@ -9,64 +9,79 @@
   <link rel="apple-touch-icon" href="assets/images/725b756a69a7d4c235070e51acd85560.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="nav-link" href="index.html">Welcome</a>
-      <a class="nav-link" href="engineering.html">Engineering<br>Course &amp; Projects</a>
-      <a class="nav-link" href="mobility.html">International<br>Mobility</a>
-      <a class="nav-link" href="sustainability.html">Sustainability &amp;<br>Civic Engagement</a>
-      <a class="nav-link" href="career.html">Career<br>Development</a>
-      <a class="nav-link active" href="sport.html">Sport &amp;<br>other activities</a>
+      <a class="nav-brand" href="index.html">Valentin <span>LILLIÉ</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Welcome</a>
+        <a class="nav-link" href="engineering.html">Engineering &amp; Projects</a>
+        <a class="nav-link" href="mobility.html">International Mobility</a>
+        <a class="nav-link" href="sustainability.html">Sustainability</a>
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link active" href="sport.html">Sport</a>
+      </div>
     </nav>
   </header>
 
   <main class="page-container">
-    <div class="sport-header-row">
-      <h1 class="page-title page-title--sub">Sport</h1>
+    <div class="sport-intro">
+      <div>
+        <h1 class="page-title">Sport &amp; other activities</h1>
+        <p class="page-subtitle">Running, hiking, and cycling outdoors.</p>
+      </div>
+
       <a
-        class="strava-link"
+        class="strava-pill"
         href="https://www.strava.com/athletes/142114989"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Valentin LILLIÉ on Strava"
       >
-        <img class="strava-icon" src="assets/media/5314f8604d8df7d6057c548d1f1c66b1.png" alt="Strava icon">
+        <img class="strava-icon" src="assets/media/5314f8604d8df7d6057c548d1f1c66b1.png" alt="">
         <img class="strava-wordmark" src="assets/media/52ae65ae2438452569e357f4c565da66.png" alt="Strava">
       </a>
     </div>
 
-    <section class="running-row">
-      <a
-        class="club-badge-link"
-        href="https://www.instagram.com/club_run7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="RUN7 Run Club Instagram"
-      >
-        <img class="run7-badge" src="assets/media/f6291a28d0411dbd5c861834303caf22.png" alt="RUN7 Run Club">
-      </a>
-
-      <h2 class="sport-script-title">Running</h2>
+    <article class="card sport-card-row">
+      <div>
+        <div class="sport-badge-header">
+          <a
+            class="club-badge-link"
+            href="https://www.instagram.com/club_run7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="RUN7 Run Club Instagram"
+          >
+            <img class="run7-badge" src="assets/media/f6291a28d0411dbd5c861834303caf22.png" alt="RUN7 Run Club">
+          </a>
+          <div>
+            <span class="section-label">RUN7 Club · ENSEEIHT</span>
+            <h2 class="card-title" style="margin-bottom: 0;">Running</h2>
+          </div>
+        </div>
+        <p class="body-text">
+          Member of the RUN7 running club at ENSEEIHT. Trail and long-distance runs around the Vosges and Toulouse.
+        </p>
+      </div>
 
       <img
         class="running-map"
         src="assets/media/0e44afa08a8ead7a4bf51a919fcf8943.jpg"
         alt="26.19 km running route around Corcieux"
       >
-    </section>
+    </article>
 
-    <section class="hiking-section">
+    <article class="card">
       <img
         class="hiking-photo"
         src="assets/media/794c7fe6fdfa68c5e79e88cec7470476.png"
         alt="Mountain panorama while hiking"
       >
-      <div class="hiking-label-row">
-        <h2 class="sport-script-title">Hiking</h2>
+      <div class="sport-badge-header" style="margin-bottom: 0;">
         <a
           class="club-badge-link"
           href="https://www.instagram.com/7randos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -76,11 +91,23 @@
         >
           <img class="randos-badge" src="assets/media/e45a2441294704bc50144879d72cbc36.png" alt="7Randos N7">
         </a>
+        <div>
+          <span class="section-label">7Randos · ENSEEIHT</span>
+          <h2 class="card-title" style="margin-bottom: 4px;">Hiking</h2>
+          <p class="body-text">Mountain hikes and outdoor excursions with the 7Randos club.</p>
+        </div>
       </div>
-    </section>
+    </article>
 
-    <section class="cycling-row">
-      <h2 class="sport-script-title">Cycling</h2>
+    <article class="card cycling-grid">
+      <div>
+        <span class="section-label">Outdoors</span>
+        <h2 class="card-title">Cycling</h2>
+        <p class="body-text">
+          Mountain biking rides across trails and countryside landscapes.
+        </p>
+      </div>
+
       <div class="cycling-photos">
         <img
           class="cycling-photo"
@@ -93,7 +120,19 @@
           alt="Cycling under dramatic clouds"
         >
       </div>
-    </section>
+    </article>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Valentin LILLIÉ — ENSEEIHT, Toulouse</span>
+      <div class="footer-links">
+        <a href="cv-french.html">CV Français</a>
+        <a href="cv-english.html">CV English</a>
+        <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

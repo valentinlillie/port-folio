@@ -9,79 +9,97 @@
   <link rel="apple-touch-icon" href="assets/images/725b756a69a7d4c235070e51acd85560.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="nav-link" href="index.html">Welcome</a>
-      <a class="nav-link" href="engineering.html">Engineering<br>Course &amp; Projects</a>
-      <a class="nav-link" href="mobility.html">International<br>Mobility</a>
-      <a class="nav-link active" href="sustainability.html">Sustainability &amp;<br>Civic Engagement</a>
-      <a class="nav-link" href="career.html">Career<br>Development</a>
-      <a class="nav-link" href="sport.html">Sport &amp;<br>other activities</a>
+      <a class="nav-brand" href="index.html">Valentin <span>LILLIÉ</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Welcome</a>
+        <a class="nav-link" href="engineering.html">Engineering &amp; Projects</a>
+        <a class="nav-link" href="mobility.html">International Mobility</a>
+        <a class="nav-link active" href="sustainability.html">Sustainability</a>
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link" href="sport.html">Sport</a>
+      </div>
     </nav>
   </header>
 
   <main class="page-container">
-    <h1 class="page-title page-title--medium">Sustainability &amp; Civic<br>Engagement</h1>
+    <div class="page-intro">
+      <h1 class="page-title">Sustainability &amp; Civic Engagement</h1>
+      <p class="page-subtitle">Environmental initiatives, student outreach, and sustainable technology projects.</p>
+    </div>
 
-    <section class="sustainability-block">
-      <h2 class="section-bullet-title">Clean walk with N7 :</h2>
-      <div class="sustainability-stack">
+    <div class="sustainability-grid">
+      <article class="card sust-card">
         <img
-          class="cleanwalk-photo"
+          class="sust-photo sust-photo--cleanwalk"
           src="assets/media/2c2517aa338d5b4aad1c6b8584db36d8.jpg"
           alt="Waste collected during Clean Walk in Toulouse"
         >
-        <p class="body-text body-text--justified" style="max-width: 280px;">
+        <span class="section-label">Toulouse · N7</span>
+        <h2 class="card-title">Clean walk with N7</h2>
+        <p class="body-text">
           During the first week of my return to N7, a clean-up walk was organized throughout Toulouse. We collected more than 5 kg of waste.
         </p>
-      </div>
-    </section>
+      </article>
 
-    <section class="sustainability-block">
-      <h2 class="section-bullet-title">Fresque du climat :</h2>
-      <div class="sustainability-stack">
-        <p class="body-text body-text--justified" style="max-width: 380px;">
-          During the second week of my return to N7, an activity called the Climate Fresco was organized by Toulouse INP. With my group, we worked on the nine planetary boundaries.
-        </p>
+      <article class="card sust-card">
         <img
-          class="fresque-photo"
+          class="sust-photo"
           src="assets/media/51ac1d3bb55ce7db0ec54fdba9fff3a6.jpg"
           alt="Climate Fresco workshop on the nine planetary boundaries"
         >
-      </div>
-    </section>
+        <span class="section-label">Toulouse INP</span>
+        <h2 class="card-title">Fresque du climat</h2>
+        <p class="body-text">
+          During the second week of my return to N7, an activity called the Climate Fresco was organized by Toulouse INP. With my group, we worked on the nine planetary boundaries.
+        </p>
+      </article>
 
-    <section class="sustainability-block">
-      <h2 class="section-bullet-title">Forum des métiers :</h2>
-      <div class="sustainability-stack">
+      <article class="card sust-card">
         <img
-          class="forum-photo"
+          class="sust-photo sust-photo--forum"
           src="assets/media/167191e7df0ca73332a2e50f4289b177.jpg"
           alt="Presenting ENSEEIHT at Lycée Claude Gellée in Épinal"
         >
-        <p class="body-text body-text--justified" style="max-width: 380px;">
+        <span class="section-label">December 2025 · Épinal</span>
+        <h2 class="card-title">Forum des métiers</h2>
+        <p class="body-text">
           I presented ENSEEIHT on December 19, 2025, at my former high school, Claude Gellée in Épinal, where I attended preparatory classes.
         </p>
-      </div>
-    </section>
+      </article>
 
-    <section class="sustainability-block">
-      <h2 class="section-bullet-title">Re-Start</h2>
-      <div class="sustainability-stack">
-        <p class="body-text body-text--justified" style="max-width: 390px;">
-          Convinced that digital technology must be accessible and sustainable, 7 friends and I plan to launch the Re-Start project. Our mission is twofold: to reduce the environmental impact of electronic waste by refurbishing broken computers (sourced from companies, recycling centers, etc.) and to support local education by equipping schools in Toulouse. Beyond simple donations, we will provide ongoing maintenance to ensure optimal learning conditions for students.
-        </p>
+      <article class="card sust-card sust-card--featured">
         <img
-          class="restart-photo"
+          class="sust-photo--poster"
           src="assets/media/2673fc8f039096aaecce6fd2aeff10b1.jpg"
           alt="Re-Start computer refurbishment project"
         >
-      </div>
-    </section>
+        <div>
+          <span class="section-label">Student Initiative · Toulouse</span>
+          <h2 class="card-title">Re-Start</h2>
+          <p class="body-text">
+            Convinced that digital technology must be accessible and sustainable, 7 friends and I plan to launch the Re-Start project. Our mission is twofold: to reduce the environmental impact of electronic waste by refurbishing broken computers (sourced from companies, recycling centers, etc.) and to support local education by equipping schools in Toulouse. Beyond simple donations, we will provide ongoing maintenance to ensure optimal learning conditions for students.
+          </p>
+        </div>
+      </article>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Valentin LILLIÉ — ENSEEIHT, Toulouse</span>
+      <div class="footer-links">
+        <a href="cv-french.html">CV Français</a>
+        <a href="cv-english.html">CV English</a>
+        <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

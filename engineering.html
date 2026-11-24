@@ -9,28 +9,35 @@
   <link rel="apple-touch-icon" href="assets/images/725b756a69a7d4c235070e51acd85560.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="nav-link" href="index.html">Welcome</a>
-      <a class="nav-link active" href="engineering.html">Engineering<br>Course &amp; Projects</a>
-      <a class="nav-link" href="mobility.html">International<br>Mobility</a>
-      <a class="nav-link" href="sustainability.html">Sustainability &amp;<br>Civic Engagement</a>
-      <a class="nav-link" href="career.html">Career<br>Development</a>
-      <a class="nav-link" href="sport.html">Sport &amp;<br>other activities</a>
+      <a class="nav-brand" href="index.html">Valentin <span>LILLIÉ</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Welcome</a>
+        <a class="nav-link active" href="engineering.html">Engineering &amp; Projects</a>
+        <a class="nav-link" href="mobility.html">International Mobility</a>
+        <a class="nav-link" href="sustainability.html">Sustainability</a>
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link" href="sport.html">Sport</a>
+      </div>
     </nav>
   </header>
 
   <main class="page-container">
-    <h1 class="page-title">Engineering Course &amp;<br>Projects</h1>
+    <div class="page-intro">
+      <h1 class="page-title">Engineering Course &amp; Projects</h1>
+      <p class="page-subtitle">Robotics, embedded electronics, and programming projects from CPGE and ENSEEIHT.</p>
+    </div>
 
-    <section>
-      <h2 class="section-bullet-title">Travaux d’initiative personnelle encadré (TIPE) :</h2>
+    <article class="card">
+      <span class="section-label">TIPE · Classe Préparatoire</span>
+      <h2 class="card-title">Travaux d’initiative personnelle encadré (TIPE) — Rubik’s Cube Solver</h2>
 
-      <div class="project-stack">
+      <div class="tipe-top">
         <video
           class="tipe-video"
           controls
@@ -42,93 +49,78 @@
           Your browser does not support HTML5 video.
         </video>
 
-        <h3 class="project-subtitle">Rubik’s cube solveur :</h3>
-
-        <p class="body-text body-text--justified body-text--narrow">
-          As part of my Supervised Personal Work Project (TIPE) in <em>classe préparatoire</em>, I designed a physical Rubik’s Cube solver, a project combining programming, electronics, and mechanical design.
-        </p>
-
-        <img
-          class="tipe-photo-1"
-          src="assets/media/29b89e0a0611969062436884e0930121.jpg"
-          alt="Physical Rubik's Cube solver robot"
-        >
-
-        <p class="body-text body-text--justified body-text--narrow">
-          This project allowed me to learn the basics of the C programming language as well as embedded electronics using Arduino boards. I also learned how to control motors that require a certain amount of power by using drivers as intermediaries.
-        </p>
-
-        <img
-          class="tipe-photo-2"
-          src="assets/media/7bdba4a52d27d2e549689b95aa1a81dc.jpg"
-          alt="Elegoo Uno R3 Arduino board wiring"
-        >
-
-        <img
-          class="tipe-photo-3"
-          src="assets/media/a71ea84ed1a847a8adab698020aaf1ce.jpg"
-          alt="Stepper motor drivers on breadboard"
-        >
-
-        <a
-          class="pill-button pill-button--sm"
-          href="https://www.linkedin.com/feed/update/urn:li:activity:7375602947860168704/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click here for more details
-        </a>
+        <div>
+          <p class="body-text">
+            As part of my Supervised Personal Work Project (TIPE) in <em>classe préparatoire</em>, I designed a physical Rubik’s Cube solver, a project combining programming, electronics, and mechanical design.
+          </p>
+          <p class="body-text">
+            This project allowed me to learn the basics of the C programming language as well as embedded electronics using Arduino boards. I also learned how to control motors that require a certain amount of power by using drivers as intermediaries.
+          </p>
+          <div style="margin-top: 22px;">
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7375602947860168704/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click here for more details
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <section>
-      <h2 class="section-bullet-title">7Robot club<br>(ENSEEIHT) :</h2>
+      <div class="tipe-gallery">
+        <img src="assets/media/29b89e0a0611969062436884e0930121.jpg" alt="Physical Rubik's Cube solver robot">
+        <img src="assets/media/7bdba4a52d27d2e549689b95aa1a81dc.jpg" alt="Elegoo Uno R3 Arduino board wiring">
+        <img src="assets/media/a71ea84ed1a847a8adab698020aaf1ce.jpg" alt="Stepper motor drivers on breadboard">
+      </div>
+    </article>
 
-      <div class="project-stack">
-        <p class="body-text body-text--justified body-text--narrow">
-          By joining ENSEEIHT, I immediately asked to become a member of 7Robot, a robotics club that takes part in the French Robotics Cup. This year’s theme is “Winter is Coming.” The main goal of the robot will be to collect hazelnuts, represented by small wooden pieces, and place them in a specific way to earn points.
-        </p>
+    <article class="card">
+      <div class="club-row">
+        <div>
+          <span class="section-label">Robotics Club · ENSEEIHT</span>
+          <h2 class="card-title">7Robot Club (ENSEEIHT)</h2>
+          <p class="body-text">
+            By joining ENSEEIHT, I immediately asked to become a member of 7Robot, a robotics club that takes part in the French Robotics Cup. This year’s theme is “Winter is Coming.” The main goal of the robot will be to collect hazelnuts, represented by small wooden pieces, and place them in a specific way to earn points.
+          </p>
+        </div>
 
         <a
-          class="robot-logo-link"
+          class="robot-logo-box"
           href="https://www.instagram.com/7robot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="_blank"
           rel="noopener noreferrer"
           aria-label="7Robot Instagram"
         >
-          <img
-            class="robot-logo-img"
-            src="assets/media/75c66b3ec0baae6c6052f64a9cd4f3c2.png"
-            alt="7Robot Club logo"
-          >
+          <img src="assets/media/75c66b3ec0baae6c6052f64a9cd4f3c2.png" alt="7Robot Club logo">
         </a>
       </div>
-    </section>
+    </article>
 
-    <section>
-      <h2 class="section-bullet-title">5th semester (ENSEEIHT) :</h2>
+    <article class="card">
+      <span class="section-label">5th Semester · ENSEEIHT</span>
+      <h2 class="card-title">“Snake” Game in C</h2>
+      <p class="body-text">
+        To master the C programming language, we were offered a project: coding the "snake" game in C with CodeBlocks.
+      </p>
 
-      <div class="project-stack">
-        <h3 class="project-subtitle">“Snake” game :</h3>
-
-        <p class="body-text body-text--justified body-text--xs">
-          To master the C programming language, we were offered a project: coding the "snake" game in C with CodeBlocks.
-        </p>
-
-        <div class="snake-crop">
-          <img
-            src="assets/media/a3846bd23e0a9b66dcc2a15a6e0cf6cc.png"
-            alt="Snake game console window"
-          >
-        </div>
-
-        <img
-          class="snake-full"
-          src="assets/media/79d0e3c6ce4ab99743cfa9b3c59ff8a3.png"
-          alt="Snake game in CodeBlocks IDE"
-        >
+      <div style="margin-top: 22px;">
+        <img class="snake-full" src="assets/media/79d0e3c6ce4ab99743cfa9b3c59ff8a3.png" alt="Snake game in CodeBlocks IDE">
       </div>
-    </section>
+    </article>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Valentin LILLIÉ — ENSEEIHT, Toulouse</span>
+      <div class="footer-links">
+        <a href="cv-french.html">CV Français</a>
+        <a href="cv-english.html">CV English</a>
+        <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

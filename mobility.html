@@ -9,66 +9,86 @@
   <link rel="apple-touch-icon" href="assets/images/725b756a69a7d4c235070e51acd85560.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="nav-link" href="index.html">Welcome</a>
-      <a class="nav-link" href="engineering.html">Engineering<br>Course &amp; Projects</a>
-      <a class="nav-link active" href="mobility.html">International<br>Mobility</a>
-      <a class="nav-link" href="sustainability.html">Sustainability &amp;<br>Civic Engagement</a>
-      <a class="nav-link" href="career.html">Career<br>Development</a>
-      <a class="nav-link" href="sport.html">Sport &amp;<br>other activities</a>
+      <a class="nav-brand" href="index.html">Valentin <span>LILLIÉ</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Welcome</a>
+        <a class="nav-link" href="engineering.html">Engineering &amp; Projects</a>
+        <a class="nav-link active" href="mobility.html">International Mobility</a>
+        <a class="nav-link" href="sustainability.html">Sustainability</a>
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link" href="sport.html">Sport</a>
+      </div>
     </nav>
   </header>
 
   <main class="page-container">
-    <h1 class="page-title">International Mobility</h1>
-    <h2 class="page-title page-title--sub">Projects</h2>
+    <div class="page-intro">
+      <h1 class="page-title">International Mobility</h1>
+      <p class="page-subtitle">Projects and academic exchange opportunities under consideration.</p>
+    </div>
 
-    <section class="mobility-block">
-      <h3 class="section-bullet-title">WWOOF in Ireland</h3>
-      <div class="mobility-row">
-        <img
-          class="mobility-photo"
-          src="assets/media/a95366036aeca9682c33753da7e69d10.jpg"
-          alt="Sheep on a green Irish farm"
-        >
-        <p class="body-text body-text--justified">
+    <article class="card mobility-card">
+      <img
+        class="mobility-photo"
+        src="assets/media/a95366036aeca9682c33753da7e69d10.jpg"
+        alt="Sheep on a green Irish farm"
+      >
+      <div>
+        <span class="section-label">Gap Year · Ireland</span>
+        <h2 class="card-title">WWOOF in Ireland</h2>
+        <p class="body-text">
           After my first year at N7, I will be able to take a gap year to work on an Irish farm, initially to improve my English, but also to discover Irish culture and farm life.
         </p>
       </div>
-    </section>
+    </article>
 
-    <section class="mobility-block">
-      <h3 class="section-bullet-title">Université libre de Bruxelles (ULB), Belgium</h3>
-      <div class="mobility-row mobility-row--reverse">
-        <p class="body-text body-text--justified">
+    <article class="card mobility-card mobility-card--reverse">
+      <div>
+        <span class="section-label">Semester 7 · Belgium</span>
+        <h2 class="card-title">Université libre de Bruxelles (ULB), Belgium</h2>
+        <p class="body-text">
           I could also go to <a class="inline-link" href="https://www.ulb.be" target="_blank" rel="noopener noreferrer">ULB</a> in Belgium for my seventh semester, taking the following courses: Advanced Electronics, Automation and Control, Electrical Machines, and Electrical Energy and Conversion.
         </p>
-        <img
-          class="mobility-photo"
-          src="assets/media/0dc46fca82a45d0de73b6b443a2a0ae2.jpg"
-          alt="Université libre de Bruxelles campus"
-        >
       </div>
-    </section>
+      <img
+        class="mobility-photo"
+        src="assets/media/0dc46fca82a45d0de73b6b443a2a0ae2.jpg"
+        alt="Université libre de Bruxelles campus"
+      >
+    </article>
 
-    <section class="mobility-block">
-      <h3 class="section-bullet-title">Ecole de technologie supérieure (ETS), Montréal</h3>
-      <div class="mobility-row">
-        <img
-          class="mobility-photo"
-          src="assets/media/f5373661481fb6ea48ebbff5b05110a4.jpg"
-          alt="École de technologie supérieure in Montreal"
-        >
-        <p class="body-text body-text--justified">
+    <article class="card mobility-card">
+      <img
+        class="mobility-photo"
+        src="assets/media/f5373661481fb6ea48ebbff5b05110a4.jpg"
+        alt="École de technologie supérieure in Montreal"
+      >
+      <div>
+        <span class="section-label">Semester 7 · Canada</span>
+        <h2 class="card-title">École de technologie supérieure (ETS), Montréal</h2>
+        <p class="body-text">
           My seventh semester could also take place at <a class="inline-link" href="https://www.etsmtl.ca" target="_blank" rel="noopener noreferrer">ETS</a> in Montreal, and thanks to a wide range of courses, I could study: Electronic Circuits, Electromagnetism, Digital Systems Design, and Processor Architecture, in order to strengthen my skills in embedded systems.
         </p>
       </div>
-    </section>
+    </article>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Valentin LILLIÉ — ENSEEIHT, Toulouse</span>
+      <div class="footer-links">
+        <a href="cv-french.html">CV Français</a>
+        <a href="cv-english.html">CV English</a>
+        <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
