@@ -27,14 +27,50 @@
     </nav>
   </header>
 
-  <main class="page-container">
+  <main id="top" class="page-container">
     <div class="page-intro">
       <h1 class="page-title">Engineering Course &amp; Projects</h1>
       <p class="page-subtitle">Robotics competitions, PCB &amp; sensor design, analog/DSP instrumentation, and software projects.</p>
     </div>
 
+    <!-- Quick Navigation / Table of Contents -->
+    <nav class="card toc-card" aria-label="Projects table of contents">
+      <p class="toc-heading">Quick Jump — Projects Overview</p>
+      <div class="toc-grid">
+        <div class="toc-group">
+          <h2 class="toc-group-title">7Robot Club (ENSEEIHT)</h2>
+          <ul class="toc-list">
+            <li><a href="#7robot-club">7Robot Presidency &amp; Cup Overview</a></li>
+            <li><a href="#robot-2027">Main Robot 2027 (Work in Progress)</a></li>
+            <li><a href="#pami-ninja">“PAMI Ninja” — 2026 Edition</a></li>
+          </ul>
+        </div>
+
+        <div class="toc-group">
+          <h2 class="toc-group-title">Internship &amp; Personal Projects</h2>
+          <ul class="toc-list">
+            <li><a href="#laero-internship">LAERO / CNRS — Sensor Platform</a></li>
+            <li><a href="#rubiks-solver">TIPE — Rubik’s Cube Solver</a></li>
+          </ul>
+        </div>
+
+        <div class="toc-group">
+          <h2 class="toc-group-title">School Projects (ENSEEIHT)</h2>
+          <ul class="toc-list">
+            <li><a href="#ppg-sensor">S6 — PPG Heart-Rate Sensor Chain</a></li>
+            <li><a href="#snake-game">S5 — “Snake” Game in C</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="category-divider">
+      <h2>7Robot Club (ENSEEIHT)</h2>
+      <a class="back-to-top" href="#top">↑ Top</a>
+    </div>
+
     <!-- 7Robot Club & French Robotics Cup (2026 & 2027) -->
-    <article class="card">
+    <article id="7robot-club" class="card project-anchor">
       <div class="club-row">
         <div>
           <span class="section-label">7Robot Club · ENSEEIHT · 2025 – Present</span>
@@ -87,7 +123,7 @@
     </article>
 
     <!-- French Robotics Cup 2027 — Main Robot -->
-    <article class="card">
+    <article id="robot-2027" class="card project-anchor">
       <span class="section-label">French Robotics Cup 2027 · 7Robot · Work in Progress</span>
       <h2 class="card-title">Main Robot 2027 — Holonomic Chassis, T8 Elevator &amp; Vacuum Gripper</h2>
       <p class="body-text">
@@ -162,7 +198,7 @@
     </article>
 
     <!-- PAMI Ninja — French Robotics Cup 2026 -->
-    <article class="card">
+    <article id="pami-ninja" class="card project-anchor">
       <span class="section-label">French Robotics Cup 2026 · 7Robot · Sept 2025 – May 2026</span>
       <h2 class="card-title">“PAMI Ninja” — Autonomous Secondary Robot</h2>
       <p class="body-text">
@@ -236,8 +272,13 @@
       </div>
     </article>
 
+    <div class="category-divider">
+      <h2>Internship &amp; Personal Projects</h2>
+      <a class="back-to-top" href="#top">↑ Top</a>
+    </div>
+
     <!-- LAERO / CNRS Internship Project -->
-    <article class="card">
+    <article id="laero-internship" class="card project-anchor">
       <span class="section-label">Engineering Internship · LAERO / OMP / CNRS · June – July 2026</span>
       <h2 class="card-title">Multi-Sensor Environmental Measurement Platform</h2>
       <p class="body-text">
@@ -257,7 +298,7 @@
     </article>
 
     <!-- TIPE Rubik's Cube Solver -->
-    <article class="card">
+    <article id="rubiks-solver" class="card project-anchor">
       <span class="section-label">TIPE · Classe Préparatoire MP · 2024 – 2025</span>
       <h2 class="card-title">Physical &amp; Multi-Language Rubik’s Cube Solver</h2>
 
@@ -329,8 +370,13 @@
       </div>
     </article>
 
+    <div class="category-divider">
+      <h2>School Projects (ENSEEIHT)</h2>
+      <a class="back-to-top" href="#top">↑ Top</a>
+    </div>
+
     <!-- PPG Biomedical Sensor -->
-    <article class="card">
+    <article id="ppg-sensor" class="card project-anchor">
       <span class="section-label">Semester S6 · ENSEEIHT 3EA (Connected Objects) · 2025 – 2026</span>
       <h2 class="card-title">Photoplethysmography (PPG) Heart-Rate Sensor Chain</h2>
       <p class="body-text">
@@ -379,7 +425,7 @@
     </article>
 
     <!-- Snake Game in C -->
-    <article class="card">
+    <article id="snake-game" class="card project-anchor">
       <span class="section-label">5th Semester · ENSEEIHT</span>
       <h2 class="card-title">“Snake” Game in C</h2>
       <p class="body-text">
