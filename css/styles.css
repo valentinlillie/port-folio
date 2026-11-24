@@ -651,6 +651,25 @@ a {
   background-color: #f4f7fa;
 }
 
+.ppg-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+.ppg-media-grid img,
+.ppg-media-grid video {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+  border-radius: var(--radius-media);
+  border: 1px solid var(--border-light);
+  background-color: #0f172a;
+}
+
 .club-row {
   display: grid;
   grid-template-columns: 1.2fr 0.9fr;
@@ -1097,7 +1116,8 @@ a {
   .ninja-hero-grid,
   .ninja-videos-grid,
   .ninja-build-gallery,
-  .robot2027-build-gallery {
+  .robot2027-build-gallery,
+  .ppg-media-grid {
     grid-template-columns: 1fr;
   }
 

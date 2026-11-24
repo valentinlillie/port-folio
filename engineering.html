@@ -331,21 +331,50 @@
 
     <!-- PPG Biomedical Sensor -->
     <article class="card">
-      <span class="section-label">Academic Project · ENSEEIHT 3EA (Connected Objects) · 2025 – 2026</span>
+      <span class="section-label">Semester S6 · ENSEEIHT 3EA (Connected Objects) · 2025 – 2026</span>
       <h2 class="card-title">Photoplethysmography (PPG) Heart-Rate Sensor Chain</h2>
       <p class="body-text">
-        In a team of four, we designed and experimentally validated a complete biomedical photoplethysmography (PPG) acquisition chain — the optical principle used in smartwatches to measure heart rate without an ECG.
+        In a team of four, we designed, routed, soldered, and experimentally validated a complete biomedical photoplethysmography (PPG) acquisition chain — the optical principle used in smartwatches to measure heart rate without an ECG.
       </p>
       <ul class="clean-list">
-        <li><strong>Optical &amp; Analog Front-End:</strong> LED emitter and photodiode receiver, analog amplification (gain 4.73 / 13.5 dB, buffer and differential pair), and analog filtering validated against circuit simulations.</li>
-        <li><strong>Conversion &amp; DSP:</strong> Sample-and-hold + ADC stage followed by digital signal processing in MATLAB/Python (resampling, heart rate extraction, pulse wave velocity, and acceleration plethysmogram for vascular age estimation).</li>
+        <li><strong>Optical &amp; Analog Front-End:</strong> LED emitter and photodiode receiver, custom-routed analog amplification PCB (gain 4.73 / 13.5 dB, buffer and differential pair), and analog filtering validated against circuit simulations.</li>
+        <li><strong>Conversion &amp; DSP:</strong> Sample-and-hold + single-slope ADC (<em>CAN simple rampe</em>) interfaced with an FPGA and Arduino, followed by digital signal processing in MATLAB/Python (resampling, heart rate extraction, pulse wave velocity, and vascular age estimation).</li>
       </ul>
+
+      <figure class="media-figure tipe-gui-figure">
+        <img src="assets/media/ppg/ppg-full-chain.jpg" alt="Complete PPG acquisition PCB chain: optical sensor & amplifier, I/O module, analog filter, and single-slope ADC">
+        <figcaption>Complete assembled PCB chain (left to right): Optical sensor &amp; amplifier → I/O module → Analog filter → Single-slope ADC</figcaption>
+      </figure>
+
+      <div class="ppg-media-grid">
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-amp-routing.jpg" alt="PCB routing of the analog amplifier stage in Cadence PCB Editor">
+          <figcaption>PCB layout &amp; routing of the analog amplifier stage</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-test-bench.jpg" alt="Hardware test bench with FPGA board, Arduino, breadboard, and single-slope ADC PCB">
+          <figcaption>Hardware test bench — FPGA, Arduino &amp; single-slope ADC board</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-oscilloscope-digital.jpg" alt="Keysight mixed-signal oscilloscope showing 8-bit digital counter outputs D0 to D7">
+          <figcaption>Keysight MSOX3014T — 8-bit digital logic capture (D0–D7)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <video controls playsinline preload="metadata">
+            <source src="assets/video/ppg/ppg-adc-test.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <figcaption>Live oscilloscope validation of the single-slope ADC</figcaption>
+        </figure>
+      </div>
+
       <div class="tech-tags">
         <span class="tech-tag">Analog Electronics</span>
-        <span class="tech-tag">Circuit Simulation</span>
-        <span class="tech-tag">ADC / Instrumentation</span>
-        <span class="tech-tag">MATLAB</span>
-        <span class="tech-tag">Python DSP</span>
+        <span class="tech-tag">PCB Routing</span>
+        <span class="tech-tag">Single-Slope ADC</span>
+        <span class="tech-tag">FPGA / Arduino</span>
+        <span class="tech-tag">Oscilloscope Validation</span>
+        <span class="tech-tag">MATLAB / Python DSP</span>
       </div>
     </article>
 
