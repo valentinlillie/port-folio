@@ -1,0 +1,354 @@
+/* ==========================================================================
+   Valentin LILLIÉ — CV Pages Stylesheet (cv-english.html & cv-french.html)
+   Exact recreation of Canva CV design (#004aad rounded cards, white canvas)
+   ========================================================================== */
+
+:root {
+  --cv-blue: #004aad;
+  --cv-blue-light: #8cc4ff;
+  --cv-text: #000000;
+  --cv-white: #ffffff;
+  --cv-heading-font: "League Spartan", "Montserrat", sans-serif;
+  --cv-body-font: "Open Sans", "Canva Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.cv-page {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cv-white);
+  color: var(--cv-text);
+  font-family: var(--cv-body-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.cv-back-bar {
+  max-width: 963px;
+  margin: 0 auto;
+  padding: 14px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--cv-blue);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1.5px solid var(--cv-blue);
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.cv-back-link:hover {
+  background-color: var(--cv-blue);
+  color: var(--cv-white);
+}
+
+/* Centered Canva-proportioned CV sheet (963px coordinate system) */
+.cv-sheet {
+  width: 963px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 12px 0 48px;
+  background: var(--cv-white);
+}
+
+/* Top sidebar block — uses exact Canva vector SVG frame so icons & progress
+   bars match pixel-for-pixel, with crisp selectable text overlaid */
+.cv-sidebar-frame {
+  position: relative;
+  width: 421px;
+  height: 1859px;
+  margin: 0 auto 36px;
+}
+
+.cv-sidebar-bg {
+  position: absolute;
+  inset: 0;
+  width: 421px;
+  height: 1859px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cv-photo {
+  position: absolute;
+  left: 36px;
+  top: 30px;
+  width: 349px;
+  height: 329px;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 36px;
+}
+
+.cv-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 386px;
+  text-align: center;
+  font-family: var(--cv-heading-font);
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: 0.04em;
+  color: var(--cv-white);
+  margin: 0;
+}
+
+/* Text overlays aligned cleanly inside the SVG rounded cards */
+.cv-sb-title {
+  position: absolute;
+  left: 25px;
+  font-family: var(--cv-heading-font);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  color: var(--cv-text);
+  margin: 0;
+}
+
+.cv-sb-text {
+  position: absolute;
+  left: 25px;
+  font-family: var(--cv-body-font);
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--cv-text);
+  margin: 0;
+}
+
+.cv-contact-lines {
+  position: absolute;
+  left: 67px;
+  top: 528px;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.cv-contact-lines a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cv-contact-lines a:hover {
+  text-decoration: underline;
+}
+
+.cv-cefr-row {
+  position: absolute;
+  left: 42px;
+  width: 318px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--cv-body-font);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--cv-blue);
+}
+
+/* Main title banner below sidebar */
+.cv-main-banner {
+  max-width: 854px;
+  margin: 0 auto 36px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.cv-main-title {
+  font-family: var(--cv-heading-font);
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--cv-text);
+  margin: 0 0 16px;
+}
+
+.cv-main-title--fr {
+  font-size: 92px;
+}
+
+.cv-divider-long {
+  height: 7px;
+  background-color: var(--cv-blue);
+  width: 100%;
+  margin: 0 auto 14px;
+}
+
+.cv-divider-short {
+  height: 7px;
+  background-color: var(--cv-blue);
+  width: 62%;
+  margin: 0 auto;
+}
+
+/* Main rounded blue-bordered cards (PROFILE, EDUCATION, WORK EXPERIENCE) */
+.cv-card {
+  max-width: 824px;
+  margin: 0 auto 44px;
+  border: 6px solid var(--cv-blue);
+  border-radius: 26px;
+  padding: 18px 22px 22px;
+  background: var(--cv-white);
+}
+
+.cv-card-title {
+  font-family: var(--cv-heading-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--cv-text);
+  margin: 0 0 10px;
+}
+
+.cv-card p {
+  font-size: 20px;
+  line-height: 31px;
+  margin: 0 0 6px;
+}
+
+.cv-edu-entry {
+  margin-bottom: 10px;
+}
+
+.cv-edu-entry:last-child {
+  margin-bottom: 0;
+}
+
+.cv-edu-header {
+  font-size: 20px;
+  line-height: 31px;
+  margin: 0;
+}
+
+.cv-edu-sub {
+  font-size: 20px;
+  line-height: 31px;
+  margin: 0;
+  padding-left: 215px;
+}
+
+.cv-exp-period {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.cv-exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding-left: 16px;
+}
+
+.cv-exp-grid p {
+  font-size: 18.5px;
+  line-height: 26px;
+  margin: 0 0 8px;
+}
+
+.cv-exp-grid ul {
+  margin: 4px 0 14px;
+  padding-left: 22px;
+}
+
+.cv-exp-grid li {
+  font-size: 18.5px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+/* Bottom QR Code cards */
+.cv-qr-row {
+  max-width: 680px;
+  margin: 44px auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.cv-qr-card {
+  width: 241px;
+  background-color: var(--cv-blue);
+  border-radius: 26px;
+  padding: 16px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.18s ease;
+}
+
+.cv-qr-card:hover {
+  transform: translateY(-3px);
+}
+
+.cv-qr-label {
+  font-family: var(--cv-heading-font);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--cv-white);
+  margin: 0 0 14px;
+}
+
+.cv-qr-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
+  background: var(--cv-white);
+  padding: 4px;
+  object-fit: contain;
+}
+
+@media (max-width: 860px) {
+  .cv-sheet {
+    padding: 12px 12px 40px;
+  }
+
+  .cv-sidebar-frame {
+    transform-origin: top center;
+    transform: scale(min(1, calc((100vw - 24px) / 421)));
+    margin-bottom: calc(36px - (1 - min(1, calc((100vw - 24px) / 421))) * 1859px);
+  }
+
+  .cv-main-title,
+  .cv-main-title--fr {
+    font-size: clamp(36px, 9vw, 64px);
+  }
+
+  .cv-edu-sub {
+    padding-left: 16px;
+  }
+
+  .cv-exp-grid {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .cv-qr-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media print {
+  .cv-back-bar {
+    display: none;
+  }
+}
