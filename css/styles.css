@@ -781,6 +781,30 @@ a {
   background-color: #0f172a;
 }
 
+.ppg-subsection-title {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 26px 0 6px;
+}
+
+.ppg-plots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 14px;
+  align-items: start;
+}
+
+.ppg-plots-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-media);
+  border: 1px solid var(--border-light);
+  background-color: #ffffff;
+}
+
 .club-row {
   display: grid;
   grid-template-columns: 1.2fr 0.9fr;
@@ -1229,6 +1253,7 @@ a {
   .ninja-build-gallery,
   .robot2027-build-gallery,
   .ppg-media-grid,
+  .ppg-plots-grid,
   .toc-grid {
     grid-template-columns: 1fr;
   }

@@ -414,6 +414,43 @@
         </figure>
       </div>
 
+      <h3 class="ppg-subsection-title">Signal Acquisition &amp; Digital Signal Processing (MATLAB)</h3>
+      <p class="body-text">
+        From the live analog optical waveform captured on a Keysight oscilloscope (284 mV<sub>pp</sub> with visible systolic peaks and dicrotic notches), we processed the digitized signal in MATLAB: resampling from 1200 Hz to 100 Hz (10 ms), Butterworth low-pass (5.0 Hz) and band-pass (0.5–5.0 Hz) filtering to remove spikes and baseline drift, and spectral heart-rate extraction via periodogram (<strong>1.206 Hz ≈ 72.4 BPM</strong>).
+      </p>
+
+      <div class="ppg-plots-grid">
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-scope-waveform.png" alt="Keysight MSO-X 2012A live analog PPG waveform capture (284 mV pk-pk)">
+          <figcaption>Live analog PPG waveform on Keysight MSO-X 2012A (284 mV<sub>pp</sub>, 5 kSa/s)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-raw-signal.png" alt="Raw acquired PPG signal in MATLAB over 10 seconds">
+          <figcaption>Raw acquired PPG signal in MATLAB (10 s window)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-filtered-signal.png" alt="Digitally filtered PPG signal in MATLAB with baseline drift removed">
+          <figcaption>Filtered PPG signal (clean periodic heartbeats, baseline drift removed)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-resampled.png" alt="Resampling from 1200 Hz raw signal with spikes to 100 Hz (every 10 ms)">
+          <figcaption>Resampling from 1200 Hz raw acquisition to 100 Hz (10 ms)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-lowpass.png" alt="5.0 Hz Butterworth low-pass filtering removing spikes and smoothing the signal">
+          <figcaption>5.0 Hz Butterworth low-pass filter (spike &amp; high-frequency noise removal)</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/media/ppg/ppg-bandpass.png" alt="0.5 to 5.0 Hz Butterworth band-pass filtering stabilizing the baseline">
+          <figcaption>0.5 – 5.0 Hz Butterworth band-pass filter (stable cardiac band)</figcaption>
+        </figure>
+      </div>
+
+      <figure class="media-figure tipe-gui-figure" style="margin-bottom: 0;">
+        <img src="assets/media/ppg/ppg-periodogram.png" alt="Linear-scale periodogram of the filtered PPG signal showing a dominant peak at 1.20614 Hz (~72.4 BPM)">
+        <figcaption>Periodogram of the filtered PPG signal — dominant heart-rate peak at <strong>1.206 Hz (~72.4 BPM)</strong></figcaption>
+      </figure>
+
       <div class="tech-tags">
         <span class="tech-tag">Analog Electronics</span>
         <span class="tech-tag">PCB Routing</span>
