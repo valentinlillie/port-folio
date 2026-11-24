@@ -598,9 +598,24 @@ a {
 
 .ninja-build-gallery img {
   width: 100%;
-  height: 230px;
+  height: 250px;
   object-fit: cover;
   border-radius: var(--radius-media);
+  border: 1px solid var(--border-light);
+}
+
+.cad-img {
+  object-fit: contain !important;
+  background-color: #e9e9e9;
+}
+
+.robot2027-video {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: var(--radius-media);
+  background: #0f172a;
   border: 1px solid var(--border-light);
 }
 
