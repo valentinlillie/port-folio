@@ -30,12 +30,79 @@
   <main class="page-container">
     <div class="page-intro">
       <h1 class="page-title">Engineering Course &amp; Projects</h1>
-      <p class="page-subtitle">Robotics, embedded electronics, and programming projects from CPGE and ENSEEIHT.</p>
+      <p class="page-subtitle">Robotics competitions, PCB &amp; sensor design, analog/DSP instrumentation, and software projects.</p>
     </div>
 
+    <!-- 7Robot Club & French Robotics Cup (2026 & 2027) -->
     <article class="card">
-      <span class="section-label">TIPE · Classe Préparatoire</span>
-      <h2 class="card-title">Travaux d’initiative personnelle encadré (TIPE) — Rubik’s Cube Solver</h2>
+      <div class="club-row">
+        <div>
+          <span class="section-label">7Robot Club · ENSEEIHT · 2025 – Present</span>
+          <h2 class="card-title">French Robotics Cup (2026 &amp; 2027) &amp; 7Robot Presidency</h2>
+          <p class="body-text">
+            After joining ENSEEIHT’s robotics club <strong>7Robot</strong> in my first year, I became <strong>President</strong> in May 2026, leading a team of ~20 active members (~€10,500 annual budget), industrial partnerships (Elsys Design, Bootlin, Electroimpact, Dassault Systèmes), weekly SolidWorks &amp; RP2040 training sessions, and the multi-year <strong>R2D2 × UNIVERSEH</strong> autonomous speaking robot project.
+          </p>
+
+          <ul class="clean-list">
+            <li><strong>French Robotics Cup 2027 (In progress):</strong> Team leadership and full mechanical design of the main robot — T8 lead-screw elevator, pneumatic suction gripper, Venturi ejector, and solenoid valves.</li>
+            <li><strong>French Robotics Cup 2026 (“PAMI Ninja”):</strong> Mechanical lead for our autonomous secondary robot (central elevator rail), collaborating closely with the electronics and software teams.</li>
+          </ul>
+
+          <div class="result-highlight">
+            <strong>2026 Result:</strong> Qualified <strong>8th out of 108 homologated teams</strong> (peak score of 124 points in a match) and reached the <strong>Round of 16</strong>.
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">SolidWorks</span>
+            <span class="tech-tag">3D Printing (PLA/PETG)</span>
+            <span class="tech-tag">Laser Cutting</span>
+            <span class="tech-tag">Pneumatics</span>
+            <span class="tech-tag">RP2040 / PIC</span>
+            <span class="tech-tag">ROS2</span>
+          </div>
+
+          <div class="hero-actions" style="margin-top: 20px;">
+            <a class="btn btn-primary" href="https://7robot.framer.website/" target="_blank" rel="noopener noreferrer">7Robot Website</a>
+            <a class="btn btn-outline" href="https://www.instagram.com/7robot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram @7robot</a>
+          </div>
+        </div>
+
+        <a
+          class="robot-logo-box"
+          href="https://7robot.framer.website/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="7Robot Club Website"
+        >
+          <img src="assets/media/75c66b3ec0baae6c6052f64a9cd4f3c2.png" alt="7Robot Club logo">
+        </a>
+      </div>
+    </article>
+
+    <!-- LAERO / CNRS Internship Project -->
+    <article class="card">
+      <span class="section-label">Engineering Internship · LAERO / OMP / CNRS · June – July 2026</span>
+      <h2 class="card-title">Multi-Sensor Environmental Measurement Platform</h2>
+      <p class="body-text">
+        During my 8-week engineering internship at the <strong>Laboratoire d’Aérologie (LAERO — OMP / CNRS)</strong> in Toulouse, I developed an autonomous embedded environmental station designed for field atmospheric measurements.
+      </p>
+      <ul class="clean-list">
+        <li>Designed the schematic and routed a custom <strong>PCB in KiCad</strong> interfacing multiple environmental sensors with an Arduino architecture.</li>
+        <li>Implemented embedded acquisition firmware and analyzed sensor responses.</li>
+        <li>Modeled and integrated the protective mechanical enclosure in <strong>SolidWorks</strong>, delivering a complete working prototype to the lab.</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tech-tag">KiCad (PCB)</span>
+        <span class="tech-tag">SolidWorks (CAD)</span>
+        <span class="tech-tag">Arduino / C++</span>
+        <span class="tech-tag">Environmental Sensors</span>
+      </div>
+    </article>
+
+    <!-- TIPE Rubik's Cube Solver -->
+    <article class="card">
+      <span class="section-label">TIPE · Classe Préparatoire MP · 2024 – 2025</span>
+      <h2 class="card-title">Physical &amp; Multi-Language Rubik’s Cube Solver</h2>
 
       <div class="tipe-top">
         <video
@@ -51,12 +118,27 @@
 
         <div>
           <p class="body-text">
-            As part of my Supervised Personal Work Project (TIPE) in <em>classe préparatoire</em>, I designed a physical Rubik’s Cube solver, a project combining programming, electronics, and mechanical design.
+            As part of my Supervised Personal Work Project (TIPE) in <em>classe préparatoire</em>, I designed a physical Rubik’s Cube solver combining multi-language software, embedded power electronics, and custom mechanics:
           </p>
-          <p class="body-text">
-            This project allowed me to learn the basics of the C programming language as well as embedded electronics using Arduino boards. I also learned how to control motors that require a certain amount of power by using drivers as intermediaries.
-          </p>
-          <div style="margin-top: 22px;">
+          <ul class="clean-list">
+            <li><strong>Python:</strong> Graphical user interface (GUI) to input the initial color state of the cube.</li>
+            <li><strong>OCaml:</strong> Algebraic data model of the cube and full <strong>Fridrich (CFOP)</strong> solving algorithm (Cross, F2L, OLL, PLL).</li>
+            <li><strong>Arduino (C/C++) &amp; Mechanics:</strong> Stepper motor control through power drivers (12V/24V), custom frame modeled in <strong>Fusion 360</strong>, and mechanically modified Rubik’s Cube shafts.</li>
+          </ul>
+
+          <div class="result-highlight">
+            <strong>Result:</strong> Complete physical resolution of a scrambled Rubik’s Cube in <strong>6 to 7 seconds</strong>.
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">OCaml</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Arduino (C/C++)</span>
+            <span class="tech-tag">Fusion 360</span>
+            <span class="tech-tag">Stepper Drivers</span>
+          </div>
+
+          <div style="margin-top: 20px;">
             <a
               class="btn btn-primary"
               href="https://www.linkedin.com/feed/update/urn:li:activity:7375602947860168704/"
@@ -76,28 +158,27 @@
       </div>
     </article>
 
+    <!-- PPG Biomedical Sensor -->
     <article class="card">
-      <div class="club-row">
-        <div>
-          <span class="section-label">Robotics Club · ENSEEIHT</span>
-          <h2 class="card-title">7Robot Club (ENSEEIHT)</h2>
-          <p class="body-text">
-            By joining ENSEEIHT, I immediately asked to become a member of 7Robot, a robotics club that takes part in the French Robotics Cup. This year’s theme is “Winter is Coming.” The main goal of the robot will be to collect hazelnuts, represented by small wooden pieces, and place them in a specific way to earn points.
-          </p>
-        </div>
-
-        <a
-          class="robot-logo-box"
-          href="https://www.instagram.com/7robot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="7Robot Instagram"
-        >
-          <img src="assets/media/75c66b3ec0baae6c6052f64a9cd4f3c2.png" alt="7Robot Club logo">
-        </a>
+      <span class="section-label">Academic Project · ENSEEIHT 3EA (Connected Objects) · 2025 – 2026</span>
+      <h2 class="card-title">Photoplethysmography (PPG) Heart-Rate Sensor Chain</h2>
+      <p class="body-text">
+        In a team of four, we designed and experimentally validated a complete biomedical photoplethysmography (PPG) acquisition chain — the optical principle used in smartwatches to measure heart rate without an ECG.
+      </p>
+      <ul class="clean-list">
+        <li><strong>Optical &amp; Analog Front-End:</strong> LED emitter and photodiode receiver, analog amplification (gain 4.73 / 13.5 dB, buffer and differential pair), and analog filtering validated against circuit simulations.</li>
+        <li><strong>Conversion &amp; DSP:</strong> Sample-and-hold + ADC stage followed by digital signal processing in MATLAB/Python (resampling, heart rate extraction, pulse wave velocity, and acceleration plethysmogram for vascular age estimation).</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tech-tag">Analog Electronics</span>
+        <span class="tech-tag">Circuit Simulation</span>
+        <span class="tech-tag">ADC / Instrumentation</span>
+        <span class="tech-tag">MATLAB</span>
+        <span class="tech-tag">Python DSP</span>
       </div>
     </article>
 
+    <!-- Snake Game in C -->
     <article class="card">
       <span class="section-label">5th Semester · ENSEEIHT</span>
       <h2 class="card-title">“Snake” Game in C</h2>
@@ -113,10 +194,11 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <span>Valentin LILLIÉ — ENSEEIHT, Toulouse</span>
+      <span>Valentin LILLIÉ — ENSEEIHT (3EA), Toulouse · <a class="inline-link" href="mailto:valentin.lillie@etu.toulouse-inp.fr">valentin.lillie@etu.toulouse-inp.fr</a></span>
       <div class="footer-links">
         <a href="cv-french.html">CV Français</a>
         <a href="cv-english.html">CV English</a>
+        <a href="https://github.com/valentinlillie" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/valentin-lillie/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://www.strava.com/athletes/142114989" target="_blank" rel="noopener noreferrer">Strava</a>
       </div>
